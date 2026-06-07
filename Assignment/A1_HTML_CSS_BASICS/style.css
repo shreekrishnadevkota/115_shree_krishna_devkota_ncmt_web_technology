@@ -16,6 +16,7 @@ a{
     font-family: var(--font-family);
 }
 
+
 .main-container {
     width: 100%;
     max-width: 1200px;
@@ -23,6 +24,7 @@ a{
     padding: 1.5rem;
     gap: 5px;
 }
+/* Navigation bar styles */
 
 .nav-bar {
     background-color: var(--primary-color);
@@ -34,6 +36,8 @@ a{
     display: flex;
     gap: 1rem;
 }
+
+/* picture_card styles */
 
 .picture-card {
     justify-content: center;
@@ -61,6 +65,8 @@ a{
     font-family: var(--font-family);
     font-size: 1.5rem;
 }
+/* form_container styles */
+
 .form-container {
     background-color: var(--card-background);
     padding: 1.5rem;
@@ -124,6 +130,8 @@ a{
     box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
 }
 
+/* slider and color picker styles */
+
 .range-container {
     display: flex;
     align-items: center;
@@ -167,6 +175,8 @@ a{
 .submit-btn:active {
     transform: scale(0.98);
 }
+
+/* animation box styles */
 
 .animation-box {
   width: 100px;
