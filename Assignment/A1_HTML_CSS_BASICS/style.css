@@ -111,7 +111,7 @@ a, h3 {
     transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
 }
 
-/* Real-time UX feedback for valid/invalid states */
+
 .form-group input:focus {
     outline: none;
     border-color: var(--primary-color);
@@ -168,6 +168,22 @@ a, h3 {
     transform: scale(0.98);
 }
 
+.animation-box {
+  width: 100px;
+  height: 100px;
+  background-color: #ff5733;
+  position: relative; 
+  animation: slide 3s ease-in-out infinite alternate;
+  margin-top: 2rem;
+}
+@keyframes slide {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: calc(100% - 100px);
+  }
+}
 
 @media screen and (min-width: 768px) {
 
@@ -188,4 +204,21 @@ a, h3 {
    
 }
 
+@media screen and (max-width: 768px) {
+     .animation-box {
+         width: 100px;
+         height: 100px;
+         background-color: #ff5733;
+         margin: 50px auto; 
+         animation: spin 2s linear infinite; 
+    }
 
+    @keyframes spin {
+      0% {
+           transform: rotate(0deg);
+            }
+        100% {
+        transform: rotate(360deg);
+        }
+    }
+}
